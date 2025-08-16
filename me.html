@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JMEE: COMING SOON</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #000; /* Black background */
+    }
+
+    h1 {
+      font-family: 'Times New Roman', serif;
+      font-size: clamp(32px, 8vw, 90px); /* responsive size */
+      text-align: center;
+      letter-spacing: 0.05em;
+      color: #fff;
+      position: relative;
+      background: linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #d9d9d9 20%,
+        #7d7d7d 40%,
+        #000000 50%,
+        #7d7d7d 60%,
+        #d9d9d9 80%,
+        #ffffff 100%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* Add shiny sparkles like in DAZED */
+    h1::after {
+      content: "✦";
+      position: absolute;
+      top: 10%;
+      right: 20%;
+      font-size: 1.5rem;
+      color: white;
+      animation: sparkle 2s infinite linear;
+    }
+
+    @keyframes sparkle {
+      0%, 100% { opacity: 0; transform: scale(0.5) rotate(0deg); }
+      50% { opacity: 1; transform: scale(1.2) rotate(180deg); }
+    }
+  </style>
+</head>
+<body>
+  <h1>JMEE: COMING SOON</h1>
+</body>
+</html>
